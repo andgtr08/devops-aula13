@@ -84,7 +84,7 @@ def lista_candidatos(request):
         context_instance = RequestContext(request,
         {
             'title':'Lista de Candidatos',
-            'candidatos': candidato.objects.all(),
+            'candidatos': Candidato.objects.all(),
             'year':datetime.now().year,
         })
     )

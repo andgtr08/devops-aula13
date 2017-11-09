@@ -97,7 +97,7 @@ def listagem_cursos(request):
         context_instance = RequestContext(request,
         {
             'title':'Lista de Candidatos',
-            'listagem': Candidato.objects.all(),
+            'listagem': Listagem.objects.all(),
             'year':datetime.now().year,
         })
     )

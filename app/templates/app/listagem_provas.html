@@ -7,9 +7,9 @@
 </div>
 
 <table class="table">
-    <tr><th>Nome</th><th>RG</th><th>CPF</th><th>Endereco</th><th>Telefone</th></tr>
+    <tr><th>Nome da Escola</th><th>Endereço</th><th>Cidade</th><th>Estado</th></tr>
         {% for listagem in listagens %}
-          <tr><td>{{ listagem.nome_escola }}</td><td>{{ listagem.endereco }}</td><td>{{ listagem.cidade }}</td><td>{{ listagem.estado }}</td><td>{{ candidato.telefone }}</td></tr>
+          <tr><td>{{ listagem.nome_escola }}</td><td>{{ listagem.endereco }}</td><td>{{ listagem.cidade }}</td><td>{{ listagem.estado }}</td></tr>
         {% endfor %}
 </table>
 

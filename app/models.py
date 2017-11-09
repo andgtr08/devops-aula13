@@ -19,3 +19,9 @@ class Candidato(models.Model):
     cpf = models.CharField(max_length=50)
     endereco = models.CharField(max_length=250)
     telefone = models.CharField(max_length=50)
+    
+class Listagem(models.Model):
+    nome_escola = models.CharField(max_length=200)
+    endereco = models.CharField(max_length=250)
+    cidade = models.CharField(max_length=200)
+    estado = models.CharField(max_length=200)

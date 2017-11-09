@@ -89,7 +89,7 @@ def lista_candidatos(request):
         })
     )
 
-def listagem_cursos(request):
+def listagem_provas(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
